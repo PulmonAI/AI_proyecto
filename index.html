@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conexión Frontend-Servidor</title>
+</head>
+<body>
+    <h1>Conexión Frontend-Servidor</h1>
+    <input type="text" id="inputText" placeholder="Ingrese un texto">
+    <button onclick="enviarTexto()">Enviar</button>
+    <p id="resultado"></p>
+
+    <script>
+        const btn = document.getElementById(“nombre boton”);
+        btn.onclick = () => {
+        var dato1 = document.getElementById(“nombre de donde se ingresa el dato”).value;
+        var dato1 = document.getElementById(“nombre de donde se ingresa el dato”).value;
+        var dato1 = document.getElementById(“nombre de donde se ingresa el dato”).value;
+        var dato1 = document.getElementById(“nombre de donde se ingresa el dato”).value;
+        var dato1 = document.getElementById(“nombre de donde se ingresa el dato”).value;
+        var dato1 = document.getElementById(“nombre de donde se ingresa el dato”).value;
+        var dato1 = document.getElementById(“nombre de donde se ingresa el dato”).value;
+        var dato1 = document.getElementById(“nombre de donde se ingresa el dato”).value;
+        var dato1 = document.getElementById(“nombre de donde se ingresa el dato”).value;
+
+        const data = {
+        input_text1: dato1,
+        input_text2: dato2,
+        input_text3: dato3,
+        // ... (agrega los demás datos)
+    };
+
+    const response = await fetch('http://localhost/predict/)', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    });
+
+    const responseData = await response.json();
+    const resultado = responseData.result;
+
+
+</script>
+</body>
+</html>
